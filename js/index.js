@@ -19,8 +19,11 @@ bars.addEventListener('click', ()=>{
 var ulChild = document.querySelectorAll(".a");
 	ulChild.forEach((btn)=>{
 		btn.addEventListener('click', ()=>{
+			if (window.matchMedia("(max-width: 990px)").matches){
 				bars.classList.add('fa-bars')
 				bars.classList.remove('fa-x')
 				header.style.left="-100%";
+			}
+				
 		})
 	})
