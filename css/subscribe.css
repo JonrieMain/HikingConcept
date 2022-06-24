@@ -1,0 +1,137 @@
+.mainCon .subscribe{
+	height: 100%;
+	width: 100%;
+	background: #deb37e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 195px .3rem 230px .3rem;
+	position: relative;
+}
+
+/* overlay */
+.mainCon .subscribe .subscribeOverlay1{
+	position: absolute;
+    top: -17%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 180px;
+}
+.mainCon .subscribe .subscribeOverlay2{
+	position: absolute;
+
+    top: 90%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 180px;
+}
+
+.mainCon .subscribe h1{
+	font-size: 75px;
+	color: #fff;
+	font-family: var(--open);
+	font-weight: 800;
+}
+.mainCon .subscribe p{
+	font-size: 30px;
+	color: #54524f;
+	font-family: var(--open);
+	text-align: center;
+	font-weight: 500;
+	font-weight: 600;
+	margin: 75px 0 83px 0;
+}
+.mainCon .subscribe span{
+	background: #fff;
+	border-radius: 3rem;
+}
+.mainCon .subscribe span input{
+	width: 600px;
+	height: 61px;
+	border: none;
+	border-radius: 3rem;
+	text-indent: 2.5rem;
+	font-size: 22px;
+	outline: none;
+}
+.mainCon .subscribe span button{
+	padding: 18px 47px;
+	background: #54524f;
+	color: #fff;
+	border-radius: 3rem;
+	font-size: 25px;
+	cursor: pointer;
+	transition: .3s;
+}
+.mainCon .subscribe span button:hover{
+	color: #deb37e;
+}
+
+/* media for subscribe */
+@media screen and (max-width: 892px){
+	.mainCon .subscribe span input{
+	width: 340px;
+	height: 61px;
+}
+.mainCon .subscribe span button{
+	padding: 18px 20px;
+}
+
+
+
+
+/* overlay reduce height */
+.mainCon .subscribe .subscribeOverlay1{
+    max-height: 120px;
+    top: -7%;
+}
+.mainCon .subscribe .subscribeOverlay2{
+    max-height: 120px;
+    top: 91%;
+}
+
+
+
+
+}
+
+
+@media screen and (max-width: 640px){
+	.mainCon .subscribe span input{
+	  width: 200px;
+    height: 40px;
+}
+.mainCon .subscribe span button{
+	padding: 16px 14px;
+		font-size: 16px;
+}
+}
+
+
+@media screen and (max-width: 600px){
+	.mainCon .subscribe h1{
+		    font-size: 45px;
+	}
+	.mainCon .subscribe p{
+		font-size: 19px;
+	}
+
+	/* new layout of input email */
+	.mainCon .subscribe span{
+		display: flex;
+		flex-direction: column;
+		background: none;
+		gap: 1rem;
+
+	}
+	.mainCon .subscribe span input{
+				font-size: 1rem;
+				text-align: center;
+				text-indent: 0;
+	}
+
+
+}

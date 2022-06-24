@@ -1,0 +1,118 @@
+.mainCon .text{
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 253px;
+	padding: 219px .3rem 149px .3rem;
+	position: relative;
+	overflow: hidden;
+}
+
+/* overlay */
+.mainCon .text .textOverlay1{
+	position: absolute;
+	transform: translateY(-50%);
+	top: 76%;
+	right: -6%;
+	height: 100%;
+	width: 100%;
+	max-width: 812px;
+	max-height: 579px;
+}
+
+
+
+/* text1 style */
+.mainCon .text .text1{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 61px;
+}
+.mainCon .text .text1 span h1{
+	font-size: 33px;
+	font-family: var(--open);
+	color: #deb37e;
+	margin-bottom: 28px;
+}
+.mainCon .text .text1 span >p{
+	font-size: 19px;
+	font-family: var(--open);
+	color: #333d42;
+	max-width: 332px;
+	word-break: break-word;
+}
+
+
+/* text2 style */
+.mainCon .text .text2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.mainCon .text .text2 h1{
+	font-size: 100px;
+	font-family: var(--open);
+	color: #3f3f3f;
+	font-style: italic;
+	font-weight: bold;
+}
+.mainCon .text .text2 .p1{
+	font-size: 25px;
+	font-family: var(--open);
+	color: #3f3f3f;
+	max-width: 800px;
+	font-weight: 600;
+}
+.mainCon .text .text2 .p2{
+	font-size: 21px;
+	font-family: var(--open);
+	color: #3f3f3f;
+	font-weight: bold;
+	margin-top: 61px;
+}
+
+/* media for text */
+@media screen and (max-width: 600px){
+	.mainCon .text{
+		gap: 60px;
+		padding-top: 105px;
+	}
+
+
+	.mainCon .text .text1 span h1{
+		text-align: center;
+	}
+	.mainCon .text .text1 span >p{
+		text-align: center;
+	}
+
+
+	.mainCon .text .text2 h1{
+		text-align: center;
+	}
+	.mainCon .text .text2 .p1{
+		text-align: center;
+	}
+	.mainCon .text .text2 .p2{
+		text-align: center;
+	}
+
+
+	/* reduce padding and size */
+	.mainCon .text .text2 .p1{
+		padding: 0;
+		font-size: 19px;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+	.mainCon .text .text2 .p2{
+		font-size: 19px;
+	}
+}

@@ -1,0 +1,110 @@
+.mainCon .go{
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	padding: 0 .3rem 181px .3rem;
+	position: relative;
+	overflow: hidden;
+}
+.mainCon .go h1{
+	text-align: center;
+	font-size: 63px;
+	font-family: var(--open);
+	color: #e2a355;
+	font-weight: 800;
+	word-break: break-word;
+}
+.mainCon .go >p{
+	text-align: center;
+	font-size: 27px;
+	font-family: var(--open);
+	color: #7f7770;
+	padding: 49px 0 75px 0;
+	word-break: break-word;
+}
+
+/* goAbout Style */
+.mainCon .go .goAbout{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	gap: 89px;
+	flex-wrap: wrap;
+}
+
+.mainCon .go .goAbout div{
+	/*background: #7f776f;*/
+	background: #7f776fcf;
+	height: 100%;
+}
+.mainCon .go .goAbout div h2{
+	color: #fff;
+	font-family: var(--open);
+	font-size: 29px;
+	font-weight: 600;
+	margin: 51px 0 23px 15px;
+}
+.mainCon .go .goAbout div >p{
+	color: #fff;
+	font-family: var(--open);
+	font-size: 23px;
+	margin: 0 0 65px 15px;
+}
+
+/* margin bottom */
+.mainCon .go .goAbout{
+	margin-bottom: 53px;
+}
+
+.mainCon .go .goAbout div img{
+	height: 100%;
+	width: 100%;
+}
+
+/* show more style */
+.mainCon .go a{
+	color: #fff;
+	font-family: var(--open);
+	font-size: 23px;
+	padding: 15px 10px;
+	background: #7f776f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 328px;
+	margin: 0 auto;
+	border-radius: 3rem;
+	font-weight: 600;
+	text-decoration: none;
+	transition: .3s;
+}
+.mainCon .go a:hover{
+background: #deb37e;
+}
+.mainCon .go .goOverlay{
+	position: absolute;
+	top: 65%;
+	left: -10%;
+	transform: translate(-50%,-50%);
+	height: 100%;
+	width: 100%;
+}
+
+
+/* media for go */
+@media screen and (max-width: 960px){
+	.mainCon .go h1{
+		font-size: 55px;
+	}
+	.mainCon .go >p{
+		font-size: 15px;
+	}
+
+
+	.mainCon .go .goAbout div h2{
+		    font-size: 25px;
+	}
+	.mainCon .go .goAbout div >p{
+		    font-size: 20px;
+	}
+}

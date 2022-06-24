@@ -1,0 +1,52 @@
+.mainCon .footer{
+	height: 100%;
+	width: 100%;
+	background: #7f7770;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 70px;
+	padding: 235px .3rem 231px .3rem;
+}
+/* all h1 */
+.mainCon .footer div h1{
+	font-family: var(--mon);
+	font-size: 32px;
+	color: #fff;
+	margin-bottom: 29px;
+}
+.mainCon .footer div h1 a{
+	color: #fff;
+	text-decoration: none;
+}
+.mainCon .footer .foo1 p{
+	font-family: var(--mon);
+	font-size: 24px;
+	color: #fff;
+	padding: 35px 0;
+	max-width: 466px;
+}
+.mainCon .footer .foo1 span img{
+	margin-right: 15px;
+}
+
+
+
+/* foo2,foo3,foo4 style */
+.mainCon .footer .foo2,.foo3,.foo4{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.mainCon .footer .foo2 a,
+.mainCon .footer .foo3 a,
+.mainCon .footer .foo4 a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 24px;
+	font-family: var(--mon);
+	margin-bottom: 20px;
+
+}
+

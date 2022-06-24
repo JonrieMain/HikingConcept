@@ -1,0 +1,255 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300&display=swap');
+
+/* import other css */
+@import "go.css";
+@import "promo.css";
+@import "hiking.css";
+@import "explore.css";
+@import "text.css";
+@import "subscribe.css";
+@import "footer.css";
+
+
+/* root */
+:root{
+	--mont: 'Montserrat', sans-serif;
+	/* 200 400 */
+	--open: 'Open Sans', sans-serif;
+	/* 300 600 800 */
+}
+
+/* reset */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+/* mainCon */
+.mainCon{
+	height: 100%;
+	width: 100%;
+	min-width: 260px;
+}
+
+
+/* This file is for home & header style only */
+
+/* header style */
+.mainCon .header{
+	height: 170px;
+	width: 100%;
+	background: url(../images/headerBg.png)no-repeat center center/cover;
+	object-fit: cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0 54px 0 73px;
+	z-index: 100000;
+}
+.mainCon .header span{
+	height: 48px;
+	width: 175px;
+	background: #c3bfbc;
+	border-radius: 3rem;
+	position: relative;
+}
+
+.mainCon .header span input{
+	border: 0;
+	height: 48px;
+	width: 175px;
+	background: #c3bfbc;
+	border-radius: 3rem;
+	outline: none;
+	font-size: 20px;
+	color: #54524f;
+	text-indent: 1rem;
+}
+.mainCon .header span .fa-magnifying-glass{
+	position: absolute;
+	z-index: 100000;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 80%;
+	font-size: 1.5rem;
+	color: #53514f;
+	cursor: pointer;
+}
+.mainCon .header .nav a{
+	margin-right: 52px;
+	font-size: 17px;
+	text-decoration: none;
+	font-family: var(--open);
+	color: #54524f;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: .3s;
+}
+.mainCon .header .nav a:hover{
+	color: #deb37e;
+}
+
+
+.mainCon .header #bars{
+	position: fixed;
+	top: 5%;
+	right: 1%;
+	font-size: 3rem;
+	color: #c3bfbc;
+	display: none;
+	cursor: pointer;
+	transition: .4s;
+}
+
+
+/* space to top */
+.mainCon .spaceToTop{
+	height: 60px;
+	background: #f9f7f3;
+	width: 100%;
+}
+
+/* home content style */
+.mainCon .home{
+	height: 957px;
+	width: 100%;
+	background: url(../images/homeBg.jpg)no-repeat center center/cover;
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+	justify-content: center;
+}
+.mainCon .home h1{
+	font-size: 92px;
+	font-family: var(--open);
+	font-weight: 800;
+	color: #deb37e;
+	margin-left: 90px;
+
+	word-break: break-word;
+}
+.mainCon .home .firstP{
+	font-size: 25px;
+	font-family: var(--open);
+	font-style: italic;
+	color: #54524f;
+	padding: 20px 0 57px 0;
+	margin-left: 90px;
+	letter-spacing: 8px;
+	font-weight: 600;
+
+	word-break: break-word;
+}
+.mainCon .home a{
+	font-size: 25px;
+	font-family: var(--open);
+	font-weight: bold;
+	text-decoration: none;
+	color: #776c64;
+	background: #fefdfd;
+	padding: .4rem 1.5rem;
+	border-radius: 3rem;
+	margin-left: 90px;
+	transition: .3s;
+	word-break: break-word;
+}
+.mainCon .home .secondP{
+	font-size: 21px;
+	font-family: var(--open);
+	font-style: italic;
+	color: #54524f;
+	max-width: 492px;
+	margin-left: 90px;
+	margin-top: 29px;
+	font-weight: 600;
+
+	word-break: break-word;
+}
+
+
+
+
+
+
+/* media for nav bar */
+@media screen and (max-width: 960px){
+
+	/* change nav layout */
+	.mainCon .header{
+		/* for 960 above */
+		width: 75%;
+		/* ------------ */
+	height: 100vh;
+	background: #fff;
+	object-fit: unset;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	position: fixed;
+	left: -100%;
+	padding: 0;
+	z-index: 100000;
+	transition: .4s;
+}
+
+
+/* new nav bar layout and style */
+.mainCon .header .nav{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.mainCon .header .nav a{
+	margin-right: 0;
+	text-align: center;
+
+	margin-bottom: 1rem;
+}
+
+/* show bars */
+.mainCon .header #bars{
+	display: block;
+}
+
+/* display none space to top */
+.mainCon .spaceToTop{
+	display: none;
+}
+
+
+/* new home content style */
+.mainCon .home h1{
+	font-size: 55px;
+	margin-left: 20px;
+
+}
+.mainCon .home .firstP{
+	font-size: 17px;
+	    margin-left: 20px;
+}
+.mainCon .home a{
+	font-size: 17px;
+	    margin-left: 20px;
+}
+.mainCon .home .secondP{
+	font-size: 15px;
+	    margin-left: 20px;
+}
+
+}
+
+
+/* for nav bar 100% width */
+@media screen and (max-width: 450px){
+		.mainCon .header{
+		width: 100%;
+	}
+}

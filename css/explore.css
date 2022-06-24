@@ -1,0 +1,75 @@
+.mainCon .explore{
+	margin-top: 10rem;
+	height: 100%;
+	width: 100%;
+	min-height: 1000px;
+	background: url(../images/exploreTheWorldBg.svg)no-repeat center center/cover;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+}
+.mainCon .explore h1{
+	text-align: right;
+	margin-right: 60px;
+	font-size: 76px;
+	color: #deb37e;
+	font-family: var(--open);
+}
+.mainCon .explore h1 span{
+	font-size: 85px;
+	font-family: var(--open);
+	color: #54524f;
+}
+
+/* overlay */
+.mainCon .explore .exploreOverlay1{
+	height: 100%;
+	width: 100%;
+	max-height: 213px;
+	position: absolute;
+	top: 90%;
+	left: 0;
+}
+
+/* media for all explore */
+@media screen and (max-width: 950px){
+
+	/* new min-height */
+	.mainCon .explore{
+		min-height: 400px;
+	}
+
+
+	/* remove margin top */
+	.mainCon .explore{
+		margin-top: 0;
+	}
+
+
+
+	/* new layout */
+	.mainCon .explore{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	.mainCon .explore h1{
+		font-size: 35px;
+	}
+	.mainCon .explore h1 span{
+		font-size: 40px;
+	}
+
+
+
+	/* overlay reduce height */
+	.mainCon .explore .exploreOverlay1{
+		max-height: 100px;
+		top: 94%;
+	}
+
+
+}
