@@ -42,7 +42,7 @@
 .mainCon .header{
 	height: 170px;
 	width: 100%;
-	background: url(../images/headerBg.png)no-repeat center center/cover;
+	background: #fff;
 	object-fit: cover;
 	display: flex;
 	align-items: center;
@@ -126,7 +126,22 @@
 	flex-direction: column;
 	align-items:flex-start;
 	justify-content: center;
+	position: relative;
 }
+
+/* overlay1 for home */
+.mainCon .home .homeOverlay1{
+	position: absolute;
+	top: -5%;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	max-height: 200px;
+}
+
+
+
 .mainCon .home h1{
 	font-size: 92px;
 	font-family: var(--open);
@@ -161,6 +176,15 @@
 	transition: .3s;
 	word-break: break-word;
 }
+
+
+/*hover*/
+.mainCon .home a:hover{
+	background: #deb37e;
+}
+
+
+
 .mainCon .home .secondP{
 	font-size: 21px;
 	font-family: var(--open);

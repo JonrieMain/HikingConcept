@@ -4,10 +4,10 @@
 	background: #7f7770;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: baseline;
 	flex-wrap: wrap;
 	gap: 70px;
-	padding: 235px .3rem 231px .3rem;
+	padding: 235px .3rem 150px .3rem;
 }
 /* all h1 */
 .mainCon .footer div h1{
@@ -29,6 +29,10 @@
 }
 .mainCon .footer .foo1 span img{
 	margin-right: 15px;
+	cursor: pointer;
+}
+.mainCon .footer .foo1 span img:hover{
+	opacity: .5;
 }
 
 
@@ -47,6 +51,32 @@
 	font-size: 24px;
 	font-family: var(--mon);
 	margin-bottom: 20px;
+
+}
+
+
+
+/* media for footer */
+@media screen and (max-width: 750px){
+
+		.mainCon .footer{
+	padding: 235px .3rem 50px .3rem;
+}
+
+		.mainCon .footer div h1{
+		text-align: center;
+	}
+	.mainCon .footer div h1 a{
+		text-align: center;
+	}
+	.mainCon .footer .foo1 p{
+	text-align: center;
+}
+.mainCon .footer .foo1 span{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 }
 

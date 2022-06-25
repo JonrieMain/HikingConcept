@@ -23,7 +23,12 @@ var ulChild = document.querySelectorAll(".a");
 				bars.classList.add('fa-bars')
 				bars.classList.remove('fa-x')
 				header.style.left="-100%";
+				bars.style.transform="rotate(-180deg)";
 			}
 				
 		})
 	})
+
+
+	/* diable right click*/
+	document.body.addEventListener('contextmenu', (e)=>e.preventDefault())
